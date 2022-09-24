@@ -13,7 +13,7 @@ Reports are included under the directory <quartus>
 *************************************************************************************/
 
 1) Generate the project
-   - cd script
+   - cd scripts
    - make
 <st_encoder.sv> file should be generated under src directory
 tesbench environment should be generated under tb
