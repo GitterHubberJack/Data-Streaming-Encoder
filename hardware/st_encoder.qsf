@@ -1,0 +1,8 @@
+set_global_assignment -name TOP_LEVEL_ENTITY st_encoder
+set_global_assignment -name FAMILY "Stratix 10"
+set_global_assignment -name TOP_LEVEL_ENTITY st_encoder
+
+set_global_assignment -name SYSTEMVERILOG_FILE  ../src/st_encoder.sv
+set_global_assignment -name SEARCH_PATH  "../src/"
+set_global_assignment -name SEARCH_PATH  "../tb/"
+set_global_assignment -name SDC_FILE  st_encoder.sdc
