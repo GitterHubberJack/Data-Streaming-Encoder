@@ -1,0 +1,51 @@
+ethernet_msg1:
+  msg_type: 1
+  fields:
+    - eth_dst  : {"size": 6, "avail_cycle": 0 }
+    - eth_src  : {"size": 6, "avail_cycle": 0 }
+    - eth_type : {"size": 2, "avail_cycle": 0 }
+    - field0   : {"size": 4, "avail_cycle": 15}
+    - field1   : {"size": 3, "avail_cycle": 5 }
+    - field2   : {"size": 5, "avail_cycle": 10}
+
+ethernet_msg2:
+  msg_type: 2
+  fields:
+    - eth_dst  : {"size": 6, "avail_cycle": 0 }
+    - eth_src  : {"size": 6, "avail_cycle": 0 }
+    - eth_type : {"size": 2, "avail_cycle": 0 }
+    - field4   : {"size": 1, "avail_cycle": 1 }
+    - field1   : {"size": 3, "avail_cycle": 5 }
+    - field5   : {"size": 2, "avail_cycle": 6 }
+
+udp_msg1:
+  msg_type: 3
+  fields:
+    - eth_dst                  : {"size": 6, "cycle_avail": 0 }
+    - eth_src                  : {"size": 6, "cycle_avail": 0 }
+    - eth_type                 : {"size": 2, "cycle_avail": 0 }
+    - ip_version_ihl           : {"size": 1, "cycle_avail": 1 }
+    - ip_dscp_ecn              : {"size": 1, "cycle_avail": 1 }
+    - ip_length                : {"size": 2, "cycle_avail": 1 }
+    - ip_id                    : {"size": 2, "cycle_avail": 1 }
+    - ip_flags_fragment_offset : {"size": 2, "cycle_avail": 1 }
+    - ip_ttl                   : {"size": 1, "cycle_avail": 1 }
+    - ip_protocol              : {"size": 1, "cycle_avail": 1 }
+    - ip_checksum              : {"size": 2, "cycle_avail": 1 }
+    - ip_src                   : {"size": 4, "cycle_avail": 1 }
+    - ip_dst                   : {"size": 4, "cycle_avail": 1 }
+    - udp_src_port             : {"size": 2, "cycle_avail": 2 }
+    - udp_dst_port             : {"size": 2, "cycle_avail": 2 }
+    - udp_len                  : {"size": 2, "cycle_avail": 2 }
+    - udp_checksum             : {"size": 2, "cycle_avail": 2 }
+    - field0                   : {"size": 4, "cycle_avail": 15}
+    - field1                   : {"size": 3, "cycle_avail": 5 }
+    - field2                   : {"size": 5, "cycle_avail": 10}
+
+msg3:
+  msg_type: 4
+  fields:
+    - field6 : {"size": 4, "avail_cycle": 2}
+    - field7 : {"size": 4, "avail_cycle": 4}
+    - field8 : {"size": 4, "avail_cycle": 1}
+    - field9 : {"size": 3, "avail_cycle": 3}
