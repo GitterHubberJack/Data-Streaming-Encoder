@@ -1,0 +1,95 @@
+{
+   head:{
+   text:'WaveDrom example',
+   tick:1,
+   every:1
+ },
+ signal: [
+   
+    {name: 'clk', wave: 'P...........', period: 2, phase: 0, node: 'l'},
+    {name:'f0',        wave: '3......................x...', data: 'b8b7b6b5b4b3b2b1b0' },
+    {name:'f0_avail',        wave: '0...3.0...................', data: 'f0_avail'},
+ 
+    {name:'f1',        wave: '4......................x...', data: 'c3c2c1c0' },
+    {name:'f1_avail',        wave: '0.4.0...................', data: 'f1_avail' },
+     {name:'Z',        wave: '4......................x...', data: 'f5f4f3f2f1f0' },
+    {name:'Z_avail',        wave: '0...........7.0...................', data: 'Z_avail' },
+    {name:'f2',        wave: '5......................x...', data: 'd4d3d2d1d0' },
+    {name:'f2_avail',        wave: '0...............5.0...................', data: 'f2_avail'},
+    {name:'f3',        wave: '6......................x...', data: 'e3e2e1e0' },
+    {name:'f3_avail',        wave: '0...........6.0...................', data: 'f3_avail'},
+    {name:'f0_avail_dly',        wave: '0...3.....0...................', data: 'f0_avail_dly' },
+    {name:'f1_avail_dly',        wave: '0.0.0.0.4...0...................', data: 'f1_avail_dly'},
+   {name:'z_avail_dly',        wave: '0.0.0.0.....7...0...................', data: 'z_avail_dly'},
+    {name:'f2_avail_dly',        wave: '0...............5...0...................', data: 'f2_avail_dly' },
+    {name:'f3_avail_dly',        wave: '0.0.0.0.0.0.0.0.0.6...0...................', data: 'f3_avail_dly' },
+    {name:'data',        wave: 'x...3.3.3.4.7.7.5.5.6.x..................x...', data: 'b0b1b2b3 b4b5b6b7 b8c0c1c2  c3_000 f0f1f2f3 f4f500 d0d1d2d3 d4e0e1e2 e3_000'},
+    {name:'f2_avail',        wave: '0...1.0.1.0.1.0.1.0.1.0.1.0.1.0.1..............'},
+   
+  
+  	//{name: 'sclk', wave: 'P........', period : 2,  },
+   //{name: 'sclk', wave: 'P........', period : 2, phase: 0 },
+   /*{name: 'srcp_o', wave: 'P..', period: 16, node: 'l'},
+   {name: 'srcp_o', wave: 'N..', period: 16, phase: 8, node: '.c'},
+    {name: 'srcn_o', wave: 'N..', period: 16, node: '.d'},
+    {name: 'srcp_o', wave: 'P..', period: 16, node: '..e'},*/
+  /* {name: 'uclock', wave: 'lH.....l.........H.....l.........Hnhlhl'},
+   {name: 'DUT_clk', wave: '0Pl.Pl...Pl.Pl...P', period: 2, phase: 1},
+   {name:'ena1',        wave: '10.............1.0.............1.0.' },
+   {name:'ena2',        wave: '0....1.0.............1.0.............1.0.' },
+   {name: 'DUT_clk', wave: 'P................', period: 2, phase: 0, node: '0.12345'},
+   {name:'data (@ Q pin)',        wave: '3.......4.......5.......6...x...', data: 'd0 d1 d2 d3' },
+    {name: 'capture clock', wave: 'P....................', period: 4, phase: 0, node: '.........c'},
+   //{name: 'genclk', wave: 'P..', period: 16}, 
+   {name:'data (@ D pin)',        wave: 'x3.......4.......5.......6...x...', phase: -2.5, data: 'd0 d1 d2 d3' },
+   {name: 'capture clock(@ C pin)', wave: 'P................', period: 4, phase: 2, node: '...d.e'},
+  // {name:'data (@ D pin)',        wave: 'x3.......4.......5.......6...x...', phase: -3, data: 'd0 d1 d2 d3' },
+   // {name: 'sclk', wave: 'P................', period: 2, node: '........e'*/
+ 
+  ],
+  
+ edge: [
+    //'0~>d',
+    '1~>e',
+    '1~>d',
+    //'d~>e'
+ ],
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+  /*{name: 'srcp_o', wave: 'N....', period: 16, phase: 0, node: 'l'},
+  //{name: 'srcn_o', wave: 'P....', period: 16, phase: 0, node: '.c'},
+  //{name:'d',        wave: '3...4...5...6...x...', data: 'd1 d2 d3 d4' },
+  //{name: 'GE', wave: "0.1.0.1.0.1.0.1.0.1." },
+  //{name:'LDn',        wave: '.|23...4...5...6...x.', data: 'd1 d2 d3 d4', phase: 1 },
+  //{name:'',        wave: '9...................', data: 'FF_Mux_Model'},
+  //{name: 'sclk', wave: 'p...................'},
+  //{name:'d',        wave: '3...4...5...6...x...', data: 'd1 d2 d3 d4' },
+  //{name:'FF(q)',        wave: '2..3...4...5...6...x', data: 'N/A d1 d2 d3 d4' },
+  //{name: 'GE', wave: "0.1.0.1.0.1.0.1.0.1." },
+  //{name:'Mux(out)',        wave: '.|23...4...5...6...x.', data: 'd1 d2 d3 d4', phase: 1 },
+  
+  //{name:'',        wave: '2...................', data: ''},
+  //{name:'',        wave: '2...................', data: ''},
+  //{name:'',        wave: '9...................', data: 'Latch_Model(LD)'},
+  //{name: 'sclk', wave: 'p...................'},
+  //{name: 'genclk', wave: 'p....', period: 4},
+  //{name:'d',        wave: '3...4...5...6...x...', data: 'd1 d2 d3 d4' },
+  //{name: 'GE', wave: "1.0.1.0.1.0.1.0.1.0." },
+  // {name:'LDn',        wave: '3....4...5...6...x...', data: 'd1 d2 d3 d4', phase: 1 },
+  //{name:'',        wave: '9...................', data: 'FF_Mux_Model'},
+  //{name: 'sclk', wave: 'p...................'},
+  //{name:'d',        wave: '3...4...5...6...x...', data: 'd1 d2 d3 d4' },
+  //{name:'FF(q)',        wave: 'x3...4...5...6...x..', data: 'd1 d2 d3 d4' },
+  //{name: 'GE', wave: "1.0.1.0.1.0.1.0.1.0." },
+  //{name:'Mux(out)',        wave: '3....4...5...6...x..0', data: 'd1 d2 d3 d4', phase: 1 }],*/
