@@ -1,0 +1,17 @@
+msg3:
+  msg_type: 4
+  fields:
+    - field0 : {"size": 9, "avail_cycle": 3}
+    - field1 : {"size": 3, "avail_cycle": 2}
+    - Z : {"size": 6, "avail_cycle": 7}
+    - field2 : {"size": 5, "avail_cycle": 9}
+    - field3 : {"size": 4, "avail_cycle": 7}
+
+msg4:
+  msg_type: 6
+  fields:
+    - field0 : {"size": 9, "avail_cycle": 3}
+    - field1 : {"size": 3, "avail_cycle": 2}
+    - Z : {"size": 6, "avail_cycle": 7}
+    - field2 : {"size": 5, "avail_cycle": 9}
+    - field3 : {"size": 3, "avail_cycle": 7}
