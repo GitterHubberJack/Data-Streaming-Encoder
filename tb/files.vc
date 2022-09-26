@@ -1,0 +1,4 @@
+../src/st_encoder.sv
+tb.sv
++incdir+$(PWD)
+
