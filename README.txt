@@ -1,20 +1,15 @@
 /************************************************************************************
     OVERVIEW
 *************************************************************************************/
-A "data streaming Encoder" generator dedicated to parse the messages spec and generate a SystemVerilog encoder which
-outputs a serialized packet stream from a subset of the input fields.
-Optimize the encoder to minimize the latency in the packet serialization.
-Validate your encoder for correctness.
-Validate your encoder generator for correctness.
-Use a validation framework of your choosing (cocotb, uvm, scala, etc).
-
-
 A "data streaming Encoder" generator dedicated to parse the messages spec and generate a SystemVerilog encoder which outputs a serialized packet stream from a subset of the input fields.
 It is capable of encoding any type of message that adhere to the spec mentioned under example/*.yaml file
+The encoder to minimize the latency in the packet serialization.
+A UVM simulation environment is gnerated as well to validate the encoder.
 With the example included (example_spec.yaml), which contains 2 type of messsages, about 5 fields each, design is timing clean in standalone mode at 500 MHz
-EDA P&R tool: Quartus
-Version: 22.1
-Reports are included under the directory <quartus>
+- EDA simulation tool: Questasim
+- EDA P&R tool: Quartus
+   Version: 22.1
+   Reports are included under the directory <quartus>
 
 
 /************************************************************************************
